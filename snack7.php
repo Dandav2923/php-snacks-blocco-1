@@ -12,25 +12,25 @@ Poi con una select filtriamo i nostri prodotti per prezzo o per tipologia -->
 $products = [
     [
         'nome' => 'Mr muscle',
-        'img' => 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fdambros.it%2Fecommerce%2Fprodotto%2Fid%2F0000154817%2F&psig=AOvVaw3IPo5rL19gYjqWdqPckJZ8&ust=1643974388631000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKDz2_234_UCFQAAAAAdAAAAABAE',
+        'img' => 'https://m.media-amazon.com/images/I/712WpN4wd1L._AC_SL1500_.jpg',
         'tipologia' => 'disincrostante',
         'prezzo' => 2.49,
     ],
     [
         'nome' => 'Magic Mouse',
-        'img' => 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.apple.com%2Fit%2Fshop%2Fproduct%2FMK2E3Z%2FA%2Fmagic-mouse&psig=AOvVaw1SJdJJfkpHW92nV0eTqZdH&ust=1643974525393000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKi-h7-44_UCFQAAAAAdAAAAABAE',
+        'img' => 'https://m.media-amazon.com/images/I/61igO8nLHoL._AC_SL1500_.jpg',
         'tipologia' => 'hardware',
         'prezzo' => 74.00,
     ],
     [
         'nome' => 'Svelto',
-        'img' => 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.carrefour.it%2Fp%2Fsvelto-100%2525-limone-1-l%2F8000630720066.html&psig=AOvVaw1g8cFKK3-JiVvfVk_gFwJx&ust=1643974598205000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKDX3OG44_UCFQAAAAAdAAAAABAE',
+        'img' => 'https://m.media-amazon.com/images/I/713dNOO6y1L._AC_SL1500_.jpg',
         'tipologia' => 'disincrostante',
         'prezzo' => 0.99,
     ],
     [
         'nome' => 'Magic keyboard',
-        'img' => 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.apple.com%2Fit%2Fshop%2Fproduct%2FMK2A3T%2FA%2Fmagic-keyboard-italiano&psig=AOvVaw1XSptLvzXCiERHCP_BXCP0&ust=1643974667378000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOjDy4K54_UCFQAAAAAdAAAAABAE',
+        'img' => 'https://m.media-amazon.com/images/I/71cQhvB7yjL._AC_SL1500_.jpg',
         'tipologia' => 'hardware',
         'prezzo' => 109.00,
     ],
@@ -80,7 +80,7 @@ if (isset($_GET['select']) !== false) {
         <?php foreach ($filteredProducts as $element) { ?>
             <h1><?php echo $element['nome'] ?></h1>
             <div class="container">
-                <img src="<?php echo $element['img'] ?>" alt="">
+                <img src="<?php echo $element['img'] ?>" alt="" style="width : 10%">
             </div>
             <h2><?php echo $element['tipologia'] ?></h2>
             <h3>
