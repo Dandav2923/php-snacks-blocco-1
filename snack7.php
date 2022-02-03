@@ -74,7 +74,6 @@ if (isset($_GET['select']) !== false) {
                 <option value="hardware">hardware</option>
                 <option value="100">100</option>
                 <option value="200">200</option>
-
             </select>
             <button>cerca</button>
         </form>
